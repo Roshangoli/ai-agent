@@ -1,0 +1,141 @@
+{
+  "model_type": "LogisticRegression",
+  "task_type": "classification",
+  "feature_names": [
+    "id",
+    "limit_bal",
+    "sex",
+    "education",
+    "marriage",
+    "age",
+    "pay_0",
+    "pay_2",
+    "pay_3",
+    "pay_4",
+    "pay_5",
+    "pay_6",
+    "bill_amt1",
+    "bill_amt2",
+    "bill_amt3",
+    "bill_amt4",
+    "bill_amt5",
+    "bill_amt6",
+    "pay_amt1",
+    "pay_amt2",
+    "pay_amt3",
+    "pay_amt4",
+    "pay_amt5",
+    "pay_amt6"
+  ],
+  "target_column": "default_payment_next_month",
+  "metrics": {
+    "accuracy": 0.791,
+    "precision": 0.5967741935483871,
+    "recall": 0.167420814479638,
+    "f1_score": 0.26148409893992935,
+    "roc_auc": 0.6534308400954931,
+    "cv_score": 0.8015000000000001,
+    "test_score": 0.791
+  },
+  "confusion_matrix": {
+    "true_negative": 754,
+    "false_positive": 25,
+    "false_negative": 184,
+    "true_positive": 37
+  },
+  "feature_importance": [
+    {
+      "feature": "pay_0",
+      "importance": 0.553047408268368
+    },
+    {
+      "feature": "bill_amt1",
+      "importance": 0.2787796757967159
+    },
+    {
+      "feature": "marriage",
+      "importance": 0.24742191780174222
+    },
+    {
+      "feature": "bill_amt3",
+      "importance": 0.2043199939838167
+    },
+    {
+      "feature": "pay_5",
+      "importance": 0.17459286341500238
+    },
+    {
+      "feature": "bill_amt5",
+      "importance": 0.1637646776573163
+    },
+    {
+      "feature": "pay_3",
+      "importance": 0.16333962563942261
+    },
+    {
+      "feature": "bill_amt2",
+      "importance": 0.13314528121111308
+    },
+    {
+      "feature": "pay_4",
+      "importance": 0.10907155253698941
+    },
+    {
+      "feature": "age",
+      "importance": 0.10546221659236105
+    },
+    {
+      "feature": "education",
+      "importance": 0.09517114820735936
+    },
+    {
+      "feature": "bill_amt4",
+      "importance": 0.08914528566466112
+    },
+    {
+      "feature": "pay_amt2",
+      "importance": 0.0820233819741366
+    },
+    {
+      "feature": "pay_amt1",
+      "importance": 0.07880133081977521
+    },
+    {
+      "feature": "pay_2",
+      "importance": 0.06292605986392252
+    },
+    {
+      "feature": "pay_6",
+      "importance": 0.05290226941624529
+    },
+    {
+      "feature": "bill_amt6",
+      "importance": 0.048265379949956506
+    },
+    {
+      "feature": "pay_amt4",
+      "importance": 0.033098221518803726
+    },
+    {
+      "feature": "id",
+      "importance": 0.016776457095780274
+    },
+    {
+      "feature": "sex",
+      "importance": 0.014951996324694659
+    }
+  ],
+  "n_samples": 5000,
+  "n_features": 24,
+  "n_classes": 2,
+  "dataset_info": {
+    "original_rows": 5000,
+    "original_columns": 25,
+    "final_rows": 4000,
+    "final_features": 24
+  },
+  "model_id": "d0e4040f-ccc7-478e-8239-c4d24c00023d",
+  "saved_at": "2026-04-30T18:24:40.223605",
+  "model_path": "/Users/roshangoli/ai_multiagent_sim copy/models/d0e4040f-ccc7-478e-8239-c4d24c00023d/model.pkl",
+  "preprocessor_path": "/Users/roshangoli/ai_multiagent_sim copy/models/d0e4040f-ccc7-478e-8239-c4d24c00023d/preprocessor.pkl"
+}

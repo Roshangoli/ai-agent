@@ -1,0 +1,162 @@
+{
+  "speed_metrics": [
+    {
+      "query": "Show total sales by region",
+      "sql_generation_time": 1.0073988437652588,
+      "query_execution_time": 0.0022661685943603516,
+      "insights_generation_time": 2.0262467861175537,
+      "total_time": 4.045679807662964,
+      "success": true
+    },
+    {
+      "query": "Which product has the highest sales?",
+      "sql_generation_time": 1.190338134765625,
+      "query_execution_time": 0.0013859272003173828,
+      "insights_generation_time": 2.297214984893799,
+      "total_time": 4.68069314956665,
+      "success": true
+    },
+    {
+      "query": "Show sales for the last month",
+      "sql_generation_time": 1.5504491329193115,
+      "query_execution_time": 0.0013780593872070312,
+      "insights_generation_time": -0.43999433517456055,
+      "total_time": 2.6637320518493652,
+      "success": true
+    },
+    {
+      "query": "What is the average sale amount?",
+      "sql_generation_time": 0.892815113067627,
+      "query_execution_time": 0.001965045928955078,
+      "insights_generation_time": 2.0410518646240234,
+      "total_time": 3.8306920528411865,
+      "success": true
+    },
+    {
+      "query": "Show sales by product and region",
+      "sql_generation_time": 0.686378002166748,
+      "query_execution_time": 0.002836942672729492,
+      "insights_generation_time": 2.184697151184082,
+      "total_time": 3.5631847381591797,
+      "success": true
+    }
+  ],
+  "accuracy_metrics": [
+    {
+      "query": "Show total sales by region",
+      "sql_generated": true,
+      "sql_type_correct": true,
+      "execution_success": true,
+      "result_count_correct": true,
+      "actual_count": 4,
+      "overall_accuracy": true
+    },
+    {
+      "query": "Which product has the highest sales?",
+      "sql_generated": true,
+      "sql_type_correct": true,
+      "execution_success": true,
+      "result_count_correct": true,
+      "actual_count": null,
+      "overall_accuracy": true
+    },
+    {
+      "query": "Show sales in the East region",
+      "sql_generated": true,
+      "sql_type_correct": true,
+      "execution_success": true,
+      "result_count_correct": true,
+      "actual_count": null,
+      "overall_accuracy": true
+    },
+    {
+      "query": "What is the total sales?",
+      "sql_generated": true,
+      "sql_type_correct": true,
+      "execution_success": true,
+      "result_count_correct": true,
+      "actual_count": null,
+      "overall_accuracy": true
+    },
+    {
+      "query": "Show sales by product",
+      "sql_generated": true,
+      "sql_type_correct": true,
+      "execution_success": true,
+      "result_count_correct": true,
+      "actual_count": 3,
+      "overall_accuracy": true
+    }
+  ],
+  "quality_metrics": [
+    {
+      "query": "Show total sales by region",
+      "chart_generated": true,
+      "narrative_generated": true,
+      "narrative_length": 188,
+      "narrative_quality": "high",
+      "overall_quality": true
+    },
+    {
+      "query": "Which product performs best?",
+      "chart_generated": true,
+      "narrative_generated": true,
+      "narrative_length": 167,
+      "narrative_quality": "high",
+      "overall_quality": true
+    },
+    {
+      "query": "Analyze sales trends",
+      "chart_generated": true,
+      "narrative_generated": true,
+      "narrative_length": 262,
+      "narrative_quality": "high",
+      "overall_quality": true
+    }
+  ],
+  "comparison_metrics": {
+    "manual_approach": {
+      "avg_time": 300,
+      "accuracy": 80,
+      "description": "Manual SQL writing by analyst"
+    },
+    "ai_approach": {
+      "avg_time": 3.756796360015869,
+      "accuracy": 100.0,
+      "description": "AI-powered multi-agent system"
+    },
+    "improvements": {
+      "time_saved_seconds": 296.24320363998413,
+      "time_saved_minutes": 4.9373867273330685,
+      "speed_improvement_percent": 98.74773454666138,
+      "accuracy_improvement_percent": 20.0
+    }
+  },
+  "speed_summary": {
+    "avg_sql_generation": 1.065475845336914,
+    "avg_execution": 0.001966428756713867,
+    "avg_total": 3.756796360015869,
+    "min_time": 2.6637320518493652,
+    "max_time": 4.68069314956665
+  },
+  "accuracy_summary": {
+    "total_queries": 5,
+    "accurate_queries": 5,
+    "accuracy_rate": 100.0,
+    "sql_generation_rate": 100.0,
+    "execution_success_rate": 100.0,
+    "error_rate": 0.0
+  },
+  "quality_summary": {
+    "total_queries": 3,
+    "chart_success_rate": 100.0,
+    "narrative_success_rate": 100.0,
+    "high_quality_rate": 100.0,
+    "avg_narrative_length": 205.66666666666666
+  },
+  "metadata": {
+    "test_date": "2025-10-16T01:09:26.081480",
+    "python_version": "3.9.18 (main, Apr 23 2025, 22:08:57) \n[Clang 16.0.0 (clang-1600.0.26.6)]",
+    "model": "GPT-4o"
+  }
+}

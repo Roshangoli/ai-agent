@@ -1,0 +1,8 @@
+{
+  "prompt": "ingestion_(5000, 25)_4",
+  "response": "```json\n{\n    \"analysis\": {\n        \"file_size_mb\": 0.45,\n        \"detected_encoding\": \"UTF-8\",\n        \"detected_delimiter\": \",\",\n        \"has_header\": true,\n        \"sample_rows\": 5,\n        \"columns\": 25,\n        \"rows\": 5000,\n        \"memory_usage_mb\": 0.95\n    },\n    \"initial_recommendations\": {\n        \"loading_strategy\": \"standard\",\n        \"reasoning\": \"The file size is small (0.45MB), so standard loading is efficient and sufficient.\",\n        \"data_quality_issues\": {\n            \"missing_values\": \"None detected\",\n            \"data_types\": \"All columns have consistent data types as expected\",\n            \"unique_values\": \"Categorical columns have reasonable unique value counts\",\n            \"outliers\": \"Potential outliers in numerical columns like 'bill_amt' and 'pay_amt' due to large ranges\"\n        },\n        \"suggestions\": {\n            \"further_analysis\": \"Investigate potential outliers in numerical columns\",\n            \"data_validation\": \"Ensure categorical values are within expected ranges\",\n            \"encoding_check\": \"Verify UTF-8 encoding compatibility if issues arise during processing\"\n        }\n    }\n}\n```",
+  "model": "gpt-4o",
+  "estimated_tokens": 1500,
+  "cached_at": "2026-04-30T18:24:02.082641",
+  "expires_at": "2026-05-01T18:24:02.082658"
+}

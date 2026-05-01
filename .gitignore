@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+venv-autogen/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+analytics_agents.log
+
+# Documentation (keep local only, don't push)
+*.md
+!README.md
+
+# Data files (uploads)
+data/uploads/
+*.db-shm
+*.db-wal
+
+# Generated charts
+charts/*.png
+!charts/.gitkeep
+
+# Node modules (React frontend)
+node_modules/
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+Thumbs.db
+.DS_Store

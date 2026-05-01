@@ -1,0 +1,132 @@
+{
+  "model_type": "RandomForest",
+  "task_type": "classification",
+  "feature_names": [
+    "transaction_amount",
+    "account_age_days",
+    "transaction_hour",
+    "day_of_week",
+    "is_international",
+    "transaction_distance_km",
+    "transactions_last_24h",
+    "avg_transaction_amount",
+    "card_present",
+    "failed_login_attempts",
+    "email_domain_age_days",
+    "credit_score",
+    "transaction_id_target_enc",
+    "customer_id_target_enc",
+    "merchant_category_target_enc",
+    "device_type_Desktop",
+    "device_type_Mobile",
+    "device_type_Tablet",
+    "transaction_amount_per_avg_transaction_amount"
+  ],
+  "target_column": "is_fraud",
+  "metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "roc_auc": 1.0,
+    "cv_score": 1.0,
+    "test_score": 1.0
+  },
+  "confusion_matrix": {
+    "true_negative": 7,
+    "false_positive": 0,
+    "false_negative": 0,
+    "true_positive": 1
+  },
+  "feature_importance": [
+    {
+      "feature": "customer_id_target_enc",
+      "importance": 0.25857278247904364
+    },
+    {
+      "feature": "transaction_id_target_enc",
+      "importance": 0.23691932993672415
+    },
+    {
+      "feature": "avg_transaction_amount",
+      "importance": 0.10201170684324092
+    },
+    {
+      "feature": "transaction_distance_km",
+      "importance": 0.07976999556431448
+    },
+    {
+      "feature": "transaction_hour",
+      "importance": 0.06544672408930786
+    },
+    {
+      "feature": "merchant_category_target_enc",
+      "importance": 0.06051517100550586
+    },
+    {
+      "feature": "transaction_amount",
+      "importance": 0.05848446451377487
+    },
+    {
+      "feature": "account_age_days",
+      "importance": 0.035725048929359286
+    },
+    {
+      "feature": "transactions_last_24h",
+      "importance": 0.03528824068201746
+    },
+    {
+      "feature": "credit_score",
+      "importance": 0.02183575527926489
+    },
+    {
+      "feature": "email_domain_age_days",
+      "importance": 0.015528743834204266
+    },
+    {
+      "feature": "transaction_amount_per_avg_transaction_amount",
+      "importance": 0.014479641863278884
+    },
+    {
+      "feature": "device_type_Tablet",
+      "importance": 0.0048157250358337325
+    },
+    {
+      "feature": "device_type_Desktop",
+      "importance": 0.004658624614717993
+    },
+    {
+      "feature": "day_of_week",
+      "importance": 0.0043394457394457416
+    },
+    {
+      "feature": "failed_login_attempts",
+      "importance": 0.0012558659038990297
+    },
+    {
+      "feature": "card_present",
+      "importance": 0.00035273368606701937
+    },
+    {
+      "feature": "is_international",
+      "importance": 0.0
+    },
+    {
+      "feature": "device_type_Mobile",
+      "importance": 0.0
+    }
+  ],
+  "n_samples": 6000,
+  "n_features": 19,
+  "n_classes": 2,
+  "dataset_info": {
+    "original_rows": 6000,
+    "original_columns": 17,
+    "final_rows": 30,
+    "final_features": 19
+  },
+  "model_id": "3593b4c4-cd91-41fc-af4b-c471722698ff",
+  "saved_at": "2026-04-30T16:54:30.830355",
+  "model_path": "/Users/roshangoli/ai_multiagent_sim copy/models/3593b4c4-cd91-41fc-af4b-c471722698ff/model.pkl",
+  "preprocessor_path": "/Users/roshangoli/ai_multiagent_sim copy/models/3593b4c4-cd91-41fc-af4b-c471722698ff/preprocessor.pkl"
+}
