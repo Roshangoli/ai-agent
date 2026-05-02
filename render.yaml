@@ -13,17 +13,14 @@ services:
       - key: OPENAI_API_KEY
         sync: false  # You'll add this manually in Render dashboard
       - key: PYTHON_VERSION
-        value: 3.11.0
+        value: "3.11.0"
       - key: PORT
-        value: 8000
+        value: "8000"
     healthCheckPath: /api/health
 
   # Frontend (React Static Site)
-  - type: web
+  - type: static
     name: ai-analytics-frontend
-    runtime: static
-    env: static
-    region: oregon
     plan: free
     branch: main
     buildCommand: "cd frontend && npm install && npm run build"
