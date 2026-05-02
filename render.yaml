@@ -11,31 +11,23 @@ services:
     startCommand: "cd backend/api && uvicorn main:app --host 0.0.0.0 --port $PORT"
     envVars:
       - key: OPENAI_API_KEY
-        sync: false  # You'll add this manually in Render dashboard
+        sync: false
       - key: PYTHON_VERSION
         value: "3.11.0"
-      - key: PORT
-        value: "8000"
     healthCheckPath: /api/health
 
-  # Frontend (React Static Site)
-  - type: static
+  # Frontend (Static Site served via Node)
+  - type: web
     name: ai-analytics-frontend
+    runtime: node
+    env: node
+    region: oregon
     plan: free
     branch: main
     buildCommand: "cd frontend && npm install && npm run build"
-    staticPublishPath: frontend/dist
+    startCommand: "cd frontend && npx serve -s dist -l $PORT"
     envVars:
       - key: VITE_API_URL
         value: https://ai-analytics-backend.onrender.com
-    headers:
-      - path: /*
-        name: X-Frame-Options
-        value: DENY
-      - path: /*
-        name: X-Content-Type-Options
-        value: nosniff
-    routes:
-      - type: rewrite
-        source: /*
-        destination: /index.html
+      - key: NODE_VERSION
+        value: "18"
